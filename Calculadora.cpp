@@ -1,45 +1,23 @@
 #include <iostream>
 using namespace std;
+int main (){
 
-int main() {
-    int num1, num2;
-    char operacion;
-    float resultado;
+      int num1, num2, resultado;
 
-    cout << "Ingrese el primer número: ";
-    cin >> num1;
+      cout << "Ingrese Primer Numero: ";
+      cin >> num1;
+      cout << endl;
 
-    cout << "Ingrese el segundo número: ";
-    cin >> num2;
+      cout << "Ingrese Segundo Numero: ";
+      cin >> num2;
+      cout << endl;
 
-    cout << "Ingrese la operación (+, -, *, /): ";
-    cin >> operacion;
+      resultado = num1 + num2;
 
-    switch (operacion) {
-        case '+':
-            resultado = num1 + num2;
-            cout << "Resultado: " << resultado << endl;
-            break;
-        case '-':
-            resultado = num1 - num2;
-            cout << "Resultado: " << resultado << endl;
-            break;
-        case '*':
-            resultado = num1 * num2;
-            cout << "Resultado: " << resultado << endl;
-            break;
-        case '/':
-            if (num2 != 0) {
-                resultado = (float) num1 / num2;
-                cout << "Resultado: " << resultado << endl;
-            } else {
-                cout << "Error: No se puede dividir por cero." << endl;
-            }
-            break;
-        default:
-            cout << "Operación no válida." << endl;
-            break;
-    }
+      cout << "Resultado: " << resultado;
+      cout << endl;
 
-    return 0;
+
+
+     return 0;
 }
